@@ -1,0 +1,379 @@
+#head-wrap {
+  background-color: #323232;
+  border: none;
+  margin-bottom: 0px;
+}
+/* 头部的后代元素的字体设置 */
+#head-wrap * {
+  color: #fff;
+  font-size: 14px;
+}
+/* 头部导航条 */
+#head-wrap #head {
+  display: flex;
+  justify-content: center;
+}
+/* 头部菜单列表 */
+#bs-example-navbar-collapse-1 {
+  border-top: none;
+  width: 63%;
+}
+#bs-example-navbar-collapse-1 > ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+/* 头部菜单下面的每个列表里面的a标签 */
+#bs-example-navbar-collapse-1 > ul > li > a {
+  padding: 0px;
+  line-height: 50px;
+}
+/* 下拉菜单 */
+.navbar-fixed-bottom .navbar-collapse,
+.navbar-fixed-top .navbar-collapse {
+  max-height: 462px;
+}
+/* 隐藏下拉的苹果logo */
+#mobile-logo {
+  display: none;
+}
+/* 隐藏下来的购物带 */
+#mobile-cart-button {
+  display: none;
+}
+
+/* 隐藏下来的购物袋信息 */
+#mobile-cart-box {
+  display: none;
+}
+/*头部搜索框 */
+#bs-example-navbar-collapse-1 #head-search {
+  display: none;
+}
+/* 苹果图标大小 */
+#bs-example-navbar-collapse-1 > ul > li > a > i {
+  font-size: 21px;
+}
+
+/* 搜索图标 */
+#head-wrap #head #bs-example-navbar-collapse-1 > ul > li > form {
+  margin: 0px;
+}
+#head-wrap #head #bs-example-navbar-collapse-1 > ul > li > form > button {
+  background-color: #323232;
+  border: none;
+}
+#head-wrap #head #bs-example-navbar-collapse-1 > ul > li > form > button > i {
+  color: #fff;
+  font-size: 27px;
+}
+#head-wrap #head #bs-example-navbar-collapse-1 > ul > li > form > button:focus {
+  outline: none;
+}
+/* 购物车图标 */
+#head-wrap #head #bs-example-navbar-collapse-1 > ul #cart-info > a {
+  padding: 0px 12px;
+  line-height: 48px;
+}
+/* 购物袋的下拉菜单 */
+#head-wrap #head #bs-example-navbar-collapse-1 > ul > li > .dropdown-menu {
+  left: -200%;
+  width: 243px;
+  /* text-align: center; */
+}
+
+/* 购物车信息 */
+#bs-example-navbar-collapse-1 > ul > li > .dropdown-menu > li:first-child {
+  color: #969696;
+  text-align: center;
+  font-size: 14px;
+  padding: 35px 0;
+}
+#head-wrap
+  #head
+  #bs-example-navbar-collapse-1
+  > ul
+  > li
+  > .dropdown-menu
+  > li
+  > a {
+  color: #3674cb;
+  padding: 10px 30px;
+}
+#head-wrap
+  #head
+  #bs-example-navbar-collapse-1
+  > ul
+  > li
+  > .dropdown-menu
+  > li
+  > a
+  > i {
+  color: #3674cb;
+  padding-right: 10px;
+}
+
+/* banner开始 */
+
+/* iphonexr开始  */
+.jumbotron {
+  height: 100%;
+  background-color: #fafafa;
+  padding-bottom: 0px;
+}
+/* iphone-xr名字 */
+#iphone-xr {
+  height: 35px;
+  background-size: 210px 35px;
+  background-repeat: no-repeat;
+  background-image: url('../images/iphone_xr_logo_hero__doak3cl4qzqu_large.png');
+  background-position: center;
+}
+/* iphonr-xr信息 */
+#iphone-xr-info {
+  text-align: center;
+}
+/* 购买信息 */
+.jumbotron > .container > .iphone-wrap > .buy-info {
+  text-align: center;
+  font-size: 21px;
+}
+.jumbotron > .container > .iphone-wrap > .buy-info > a {
+  margin-left: 20px;
+  color: #337ab7;
+}
+.jumbotron > .container > .iphone-wrap > .buy-info > a > i {
+  font-size: 21px;
+}
+/* 产品图片 */
+.iphone-xr-img-wrap {
+  text-align: center;
+  position: relative;
+}
+.iphone-xr-img-wrap > .iphone-xr-img {
+  margin: 0 auto;
+  width: 622px;
+  height: 352px;
+  background-image: url('../images/iphone_xr__b0z59ak0bqdy_large.jpg');
+  background-repeat: no-repeat;
+}
+/* iphonexr结束 */
+
+/* iphonexs开始  */
+#iphone-wrap {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 20px;
+}
+/* iphone-xs名字 */
+#iphone-xs {
+  height: 35px;
+  background-size: 210px 35px;
+  background-repeat: no-repeat;
+  background-image: url('../images/iphone_xs_logo_hero__cao5flrjmvqq_large.png');
+  background-position: center;
+}
+/* iphonr-xs信息 */
+#iphone-xs-info {
+  margin: 0 auto;
+  text-align: center;
+  width: 610px;
+  margin-bottom: 10px;
+}
+/* 产品图片 */
+.iphone-xs-img-wrap {
+  position: relative;
+  height: 100%;
+  /* top: -217px; */
+}
+.iphone-xs-img-wrap > .iphone-xs-img {
+  margin: 0 auto;
+  position: relative;
+  /* top: 10px; */
+  height: 341px;
+  background-repeat: no-repeat;
+  background-image: url('../images/main__bmngiblug0mq_large.jpg');
+  background-position: 50% 100%;
+  background-size: auto;
+}
+/* iphonexs结束 */
+
+/* watch 开始 */
+#iwatch-wrap {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 20px;
+}
+/* iphone-xs名字 */
+#iwatch {
+  height: 80px;
+  background-repeat: no-repeat;
+  background-image: url('../images/series_4__b539g9eyf22u_large\ \(1\).jpg');
+  background-position: center;
+}
+/* iphonr-xs信息 */
+#iwatch-info {
+  margin: 0 auto;
+  text-align: center;
+  width: 610px;
+  margin-bottom: 10px;
+}
+.jumbotron > .container > #iwatch-wrap > .buy-info {
+  text-align: center;
+}
+.jumbotron > .container > #iwatch-wrap > .buy-info > a {
+  margin-left: 20px;
+  color: #337ab7;
+  font-size: 21px;
+}
+.jumbotron > .container > #iwatch-wrap > .buy-info > a > i {
+  font-size: 21px;
+}
+/* 产品图片 */
+.iwatch-img-wrap {
+  position: relative;
+  height: 100%;
+}
+.iwatch-img-wrap > .iwatch-img {
+  margin: 0 auto;
+  position: relative;
+  height: 341px;
+  background-repeat: no-repeat;
+  background-image: url('../images/watch__csqqcayzqueu_large.jpg');
+  background-position: 50% 100%;
+  background-size: auto;
+}
+/* watch 结束 */
+/* banner结束 */
+
+/* 产品列表开始 */
+.good-wrap > h4 {
+  font-size: 40px;
+  text-align: center;
+  max-width: 430px;
+  margin: 0 auto;
+}
+
+.good-wrap > h5 {
+  font-size: 21px;
+  text-align: center;
+  max-width: 430px;
+  margin: 0 auto;
+}
+.good-wrap > .buy-info {
+  font-size: 21px;
+  text-align: center;
+}
+.good-wrap > .buy-info > a {
+  color: #337ab7;
+  margin-left: 20px;
+}
+.good-wrap > .buy-info > a > i {
+  font-size: 21px;
+}
+.good-wrap > .good-img-wrap {
+  height: 100%;
+}
+.good-img-wrap > .good-img {
+  margin: 0 auto;
+  position: relative;
+  height: 341px;
+  background-repeat: no-repeat;
+  background-image: url('../images/1.jpg');
+  background-position: 50% 100%;
+  background-size: auto;
+}
+/* 产品列表结束 */
+
+/* footer开始 */
+#footer-wrap {
+  margin-bottom: 0;
+}
+#footer-info > p {
+  font-size: 12px;
+}
+#footer-info {
+  border-bottom: 1px solid #d6d6d6;
+}
+#footer-list {
+  margin-top: 10px;
+  display: flex;
+}
+
+.list-group-item.active,
+.list-group-item.active:focus,
+.list-group-item.active:hover {
+  color: #dadee0;
+  background-color: #fafafa;
+  border-color: #fafafa;
+}
+.list-group-item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  display: block;
+  color: #646464;
+  padding: 10px 15px;
+  margin-bottom: -1px;
+  background-color: #fafafa;
+  border: 1px solid #fafafa;
+  padding: 2px;
+}
+a.list-group-item:focus,
+a.list-group-item:hover,
+button.list-group-item:focus,
+button.list-group-item:hover {
+  color: #555;
+  text-decoration: none;
+  background-color: #fafafa;
+  text-decoration: underline;
+}
+/* footer其他信息 */
+#footer-exinfo {
+  border-bottom: 1px solid #d6d6d6;
+}
+#footer-exinfo > p {
+  font-size: 13px;
+  font-weight: 500;
+}
+#footer-exinfo > p > a {
+  color: #3674cb;
+}
+/* footer-warning开始 */
+#footer-warning > ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+#footer-warning > ul > li {
+  margin-right: 20px;
+  position: relative;
+}
+#footer-warning > ul > li > a {
+  color: #667078;
+  font-size: 12px;
+}
+#footer-warning > ul > li:first-child {
+  line-height: 21px;
+  color: #888a8b;
+  font-size: 13px;
+  padding: 0;
+  margin: 0;
+}
+#footer-warning > ul > li + li:before {
+  content: '';
+  width: 1px;
+  height: 16px;
+  display: block;
+  line-height: 5px;
+  position: absolute;
+  top: 4px;
+  right: -10px;
+  background-color: #d6d6d6;
+}
+
+#footer-warning > p {
+  font-size: 12px;
+  color: #666;
+  font-weight: 400;
+}
+/* footer结束 */
