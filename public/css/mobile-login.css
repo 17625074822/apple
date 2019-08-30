@@ -1,0 +1,120 @@
+/* 屏幕的宽度在768px以上 */
+@media all and (min-width: 768px) {
+  .navbar {
+    border-radius: 0px !important;
+  }
+}
+/* 屏幕的宽度在767px以下导航条变形 */
+@media all and (max-width: 767px) {
+  #head-wrap {
+    background-color: #000000;
+  }
+  #head-wrap > #head > .navbar-header {
+    width: 100%;
+  }
+  #head-wrap > #head > .navbar-header > button {
+    float: left;
+    border: none;
+  }
+  #head-wrap > #head > .navbar-header > a {
+    float: right;
+  }
+  /* logo */
+  #mobile-logo {
+    display: block;
+    position: absolute;
+    left: 44%;
+  }
+  #mobile-logo > i {
+    font-size: 21px;
+  }
+  /* 购物车 */
+  #mobile-cart {
+    display: block;
+    float: right;
+    line-height: 48px;
+  }
+  #mobile-cart > a > i {
+    font-size: 21px;
+  }
+
+  #bs-example-navbar-collapse-1 {
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    left: 15px;
+    background-color: #000000;
+  }
+  #bs-example-navbar-collapse-1 > ul {
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px;
+    padding: 20px;
+  }
+
+  #bs-example-navbar-collapse-1 > ul > li:first-child {
+    display: none;
+  }
+  #bs-example-navbar-collapse-1 > ul > li {
+    border-bottom: 1px solid #504f4f;
+  }
+  #bs-example-navbar-collapse-1 > ul > #search-wrap,
+  #bs-example-navbar-collapse-1 > ul #cart-info {
+    display: none;
+  }
+  #bs-example-navbar-collapse-1 > ul > li > a {
+    padding: 10px 0;
+    font-size: 16px;
+  }
+  /* 购物车按钮 */
+  #mobile-cart-button {
+    display: block;
+  }
+  #mobile-cart-button > i {
+    font-size: 20px;
+    line-height: 48px;
+  }
+
+  /* 购物车信息 */
+  #mobile-cart-box {
+    background-color: #fff;
+    padding: 30px;
+    margin-bottom: 0px;
+  }
+  #mobile-cart-box > li {
+    padding: 10px 0;
+    border-bottom: 1px solid #e3e3e3;
+  }
+
+  #mobile-cart-box > li > a {
+    margin-left: 20px;
+    color: #337ab7;
+  }
+  #mobile-cart-box > li > a > i {
+    color: #337ab7;
+    margin-right: 10px;
+  }
+
+  #mobile-cart-box > li:first-child {
+    color: #8a8a8a;
+    font-size: 1em;
+    padding: 35px 0;
+    text-align: center;
+    border-bottom: 1px solid #e3e3e3;
+  }
+
+  #mobile-cart-box {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 100%;
+    z-index: 1;
+  }
+
+  /* 身体 */
+  #login-wrap {
+    z-index: 0;
+    position: relative;
+  }
+}

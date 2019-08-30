@@ -13,13 +13,171 @@
       href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://at.alicdn.com/t/font_1373307_zh55onj3l2.css"
+    />
+    <link rel="stylesheet" href="./public/css/reset.css" />
+    <link rel="stylesheet" href="./public/css/login.css" />
+    <link rel="stylesheet" href="./public/css/mobile-login.css" />
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
   <body>
-    <div class="container">
+    <!-- 导航条 -->
+    <nav id="head-wrap" class="navbar navbar-inverse ">
+      <div id="head" class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <!-- 下拉按钮 -->
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#bs-example-navbar-collapse-1"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- logo -->
+          <a id="mobile-logo" class="navbar-brand" href="#">
+            <i class="iconfont icon-pingguo"></i>
+          </a>
+          <!-- 手机状态下的购物车 -->
+          <a id="mobile-cart-button" href="">
+            <i class="iconfont icon-gouwudai"></i>
+          </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li>
+              <!-- logo -->
+              <a id="apple-logo" class="navbar-brand" href="#">
+                <i class="iconfont icon-pingguo"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">Mac <span class="sr-only">(current)</span></a>
+            </li>
+            <li><a href="#">iPad</a></li>
+            <li><a href="#">iPhone</a></li>
+            <li><a href="#">Watch</a></li>
+            <li><a href="#">Music</a></li>
+            <li><a href="#">技术支持</a></li>
+            <!-- search -->
+            <li id="search-wrap">
+              <form class="navbar-form navbar-left">
+                <div class="form-group" id="head-search">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Search"
+                  />
+                </div>
+                <button type="submit" class="btn btn-default">
+                  <i class="iconfont icon-sousuo"></i>
+                </button>
+              </form>
+            </li>
+            <!-- 购物信息 -->
+            <li id="cart-info" class="dropdown">
+              <a
+                href="#"
+                class="dropdown-toggle"
+                data-toggle="dropdown"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <i class="iconfont icon-gouwudai"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li>您的购物袋是的空的</li>
+                <li role="separator" class="divider"></li>
+                <li>
+                  <a href="#">
+                    <i class="iconfont icon-gouwudai"></i>
+                    购物袋</a
+                  >
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="iconfont icon-icon-test"></i>
+                    收藏</a
+                  >
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="iconfont icon-boxxiangzi"></i>
+                    订单</a
+                  >
+                </li>
+                <li role="separator" class="divider"></li>
+                <li>
+                  <a href="#">
+                    <i class="iconfont icon-chilun"></i>
+                    账户</a
+                  >
+                </li>
+                <li role="separator" class="divider"></li>
+                <li>
+                  <a href="./login.html" target="_self">
+                    <i class="iconfont icon-zhanghu"></i>
+                    登录</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+
+      <!-- 购物信息 -->
+      <ul id="mobile-cart-box">
+        <li>您的购物袋是的空的</li>
+        <li>
+          <a href="#">
+            <i class="iconfont icon-gouwudai"></i>
+            购物袋</a
+          >
+        </li>
+        <li>
+          <a href="#">
+            <i class="iconfont icon-icon-test"></i>
+            收藏</a
+          >
+        </li>
+        <li>
+          <a href="#">
+            <i class="iconfont icon-boxxiangzi"></i>
+            订单</a
+          >
+        </li>
+        <li>
+          <a href="#">
+            <i class="iconfont icon-chilun"></i>
+            账户</a
+          >
+        </li>
+        <li>
+          <a href="./login.html">
+            <i class="iconfont icon-zhanghu"></i>
+            登录</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <div id="login-wrap" class="container">
       <div class="row">
         <div class="col-md-4"></div>
         <div class="col-md-4">
@@ -54,9 +212,7 @@
             <button class="btn btn-lg btn-primary btn-block" type="submit">
               登陆
             </button>
-            <a href="create.html" class="btn btn-lg btn-primary btn-block"
-              >注册</a
-            >
+            <a href="#" class="btn btn-lg btn-primary btn-block">注册</a>
             <a href="index.html" class="btn btn-lg btn-primary btn-block"
               >返回首页</a
             >
@@ -66,9 +222,68 @@
       </div>
     </div>
     <!-- /container -->
+
+    <!-- footer开始 -->
+    <div id="footer-help" class="container-fluid">
+      <div class="row">
+        <h3>
+          需要更多帮助？立即在线交流，或拨打 400-666-8800。
+        </h3>
+      </div>
+    </div>
+
+    <div class="jumbotron" id="footer-wrap">
+      <div class="container">
+        <!--  footer其他信息 -->
+        <div id="footer-exinfo">
+          <p>
+            更多选购方式：
+            <a href="">
+              查找你附近的 Apple Store 零售店及更多门店
+            </a>
+            ，或者致电 400-666-8800。
+          </p>
+        </div>
+        <!-- footer-warning -->
+        <div id="footer-warning">
+          <ul>
+            <li class="col-xs-12 col-md-3">
+              Copyright © 2019 Apple Inc. 保留所有权利。
+            </li>
+            <li><a href="">隐私政策</a></li>
+            <li><a href="">使用条款</a></li>
+            <li><a href="">销售政策</a></li>
+            <li><a href="">法律信息</a></li>
+            <li><a href="">网站地图</a></li>
+          </ul>
+          <p>
+            京ICP备10214630 营业执照 无线电发射设备销售备案编号11201910351200
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer结束 -->
   </body>
   <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
   <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
   <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+  <script>
+    $('#mobile-cart-button').click(function() {
+      $('#bs-example-navbar-collapse-1').css('height', '0px')
+      $('#mobile-cart-box').slideToggle()
+      return false
+    })
+    $('button').click(function() {
+      $('#mobile-cart-box').css('display', 'none')
+    })
+
+    $('.list-group a:first-child').click(function() {
+      $(this)
+        .nextAll('a')
+        .slideToggle()
+      return false
+    })
+  </script>
 </html>
